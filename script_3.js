@@ -57,20 +57,17 @@ const products = [
     },
 ];
 
-for (let j = 0; j < products.length; j++) {
+/*for (let j = 0; j < products.length; j++) {
     let sale = products[j].price * 0.15;
     console.log(sale);
-}// не совсем понятно задание ПРОСЬБА пояснить в каком виде выводить скидки
+}*/
+// не совсем понятно задание ПРОСЬБА пояснить в каком виде выводить скидки
 // (как массив или просто значение) и как это сделать с помощью forEach?
 
-/*
-   products.forEach(function(cost) {
-       for (let j = 0; j < cost.length; j++) {
-           let newCost = cost[j].price * 0.15;
-           console.log(newCost);
-       };
-    });
-*/
+   products.forEach(function(product) {
+       console.log(product.price - (product.price * 0.15));
+       });
+
 
 // EXP 6 Подсмотрел в интернете
 for(var x = 0; x < 20; x++){
